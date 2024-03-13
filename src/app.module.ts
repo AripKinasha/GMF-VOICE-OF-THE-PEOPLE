@@ -18,6 +18,7 @@ export class AppModule {}
 // app.module.ts
 
 import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
   imports: [
@@ -33,7 +34,6 @@ import { Module } from '@nestjs/common';
       synchronize: true, // Automatically synchronize database schema with entities
     }),
   ],
-  providers: [StudentService],
 })
 export class AppModule {}
 
