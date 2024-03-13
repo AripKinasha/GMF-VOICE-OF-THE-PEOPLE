@@ -30,7 +30,7 @@ export class TasksService {
   updateTask(id: string, title: string, description: string): Task {
     const task = this.getTaskById(id);
     if (!task) {
-      throw new Error('Task not found');
+      throw new Error('Task not found!');
     }
     task.title = title;
     task.description = description;
